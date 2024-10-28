@@ -1,0 +1,142 @@
+name: init
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  
+  # Internationalization
+  easy_localization: ^3.0.7
+
+  # Router, for routing
+  auto_route: ^9.2.2
+
+  #Dependency injection
+  get_it: ^8.0.1
+  injectable: ^2.5.0
+
+  # Shared preferences
+  shared_preferences: ^2.3.2
+
+  # Theme
+  flex_color_scheme: ^7.3.1
+
+  # Copy with extension
+  copy_with_extension: ^5.0.4
+
+  # Equatable
+  equatable: ^2.0.5
+
+  # Material color utilities
+  material_color_utilities: ^0.11.1
+
+  # Hive
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Secure storage
+  flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Lints
+  flutter_lints: ^4.0.0
+  
+  # Riverpod
+  riverpod_generator: ^2.6.2
+  
+  # Build runner
+  build_runner: ^2.4.13
+
+  # Custom lint for Riverpod
+  custom_lint: ^0.7.0
+
+  # Riverpod lint
+  riverpod_lint: ^2.6.2
+
+  # Auto route
+  auto_route_generator: ^9.0.0
+
+  # Injectable, for dependency injection
+  injectable_generator: ^2.6.2
+  
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  
+  assets:
+    - assets/translations/
+
+  
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: InitIcons
+      fonts:
+        - asset: assets/icons/InitIcons.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins-ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+          weight: 900
+          style: italic
+
