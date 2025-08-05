@@ -47,8 +47,6 @@
 		<true />
 		<key>UIStatusBarHidden</key>
 		<false />
-		<key>NSBluetoothAlwaysUsageDescription</key>
-		<string>Cette app utilise le Bluetooth pour scanner des devices.</string>
 		<key>NSLocationWhenInUseUsageDescription</key>
 		<string>This app needs access to your location to display your position on the map.</string>
 		<key>NSCameraUsageDescription</key>
