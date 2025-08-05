@@ -1,0 +1,4 @@
+import_from_git(
+  url: "git@git.example.com:mobile-ci-cd/ios-fastlane.git",
+  path: "import-files-gitlab/example-base-import-v1"
+)

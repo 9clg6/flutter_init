@@ -1,0 +1,24 @@
+flavors:
+  dev:
+    app:
+      name: "Starter Kit - Dev"
+    android:
+      applicationId: "fr.COMPANY.starterkit.dev"  
+    ios:
+      bundleId: "fr.COMPANY.starterkit.dev"
+
+  staging:
+    app:
+      name: "Starter Kit - Staging"
+    android:
+      applicationId: "fr.COMPANY.starterkit.staging"
+    ios:
+      bundleId: "fr.COMPANY.starterkit.staging"
+
+  prod:
+    app:
+      name: "Starter Kit"
+    android:
+      applicationId: "fr.COMPANY.starterkit"  
+    ios:
+      bundleId: "fr.COMPANY.starterkit"

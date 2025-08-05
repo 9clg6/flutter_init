@@ -1,0 +1,15 @@
+source "https://rubygems.org"
+
+gem "fastlane"
+gem 'abbrev'
+gem 'logger'
+gem 'mutex_m'
+gem 'csv'
+
+gem 'cocoapods', :group => [:default, :cocoapods_ci]
+
+group :ci do
+  gem "google-cloud-storage"
+
+  gem "read_ipa"
+end
