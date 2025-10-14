@@ -1,0 +1,34 @@
+name: endpoint
+description: Generate a Retrofit endpoint and its provider.
+version: 0.1.0
+environment:
+  mason: ">=0.1.0 <1.0.0"
+vars:
+  name:
+    type: string
+    description: Endpoint name (e.g. authentication, user).
+    default: sample
+  base_url:
+    type: string
+    description: Optional base url override passed to RestApi.
+    default: ""
+  route_path:
+    type: string
+    description: Default route path for the sample request.
+    default: /
+  client_provider:
+    type: string
+    description: Riverpod provider resolving the Dio client.
+    default: dioClientProvider
+  client_provider_import:
+    type: string
+    description: Import path for the Dio client provider.
+    default: package:starter_kit/core/providers/data/clients/dio_client.provider.dart
+  client_class:
+    type: string
+    description: Dio client class injected into the endpoint.
+    default: DioClient
+  client_class_import:
+    type: string
+    description: Import path for the Dio client class.
+    default: package:starter_kit/data/clients/dio.client.dart

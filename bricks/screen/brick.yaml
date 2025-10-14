@@ -1,0 +1,10 @@
+name: screen
+description: Generate a presentation screen with its state and view model.
+version: 0.1.0
+environment:
+  mason: ">=0.1.0 <1.0.0"
+vars:
+  name:
+    type: string
+    description: Screen name (e.g. authentication, home).
+    default: sample

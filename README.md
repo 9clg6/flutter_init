@@ -9,6 +9,7 @@ depreciations.
 
 - fvm
 - gnu make
+- mason_cli
 
 # How-To
 
@@ -56,6 +57,22 @@ install the specified flutter version with `fvm` and get the packages.
 > You want to generate files with builder
 
 Run `make generate`
+
+## mason-get
+
+> You want to fetch mason bricks locally
+
+Run `make mason-get`
+
+### Available bricks
+
+- `screen`
+- `repository`
+- `data_source`
+- `endpoint`
+- `use_case`
+
+Run `mason make <brick>` and follow the prompts. Each brick generates files that match the architecture used in this starter kit.
 
 ## localization
 

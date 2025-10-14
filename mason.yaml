@@ -1,0 +1,11 @@
+bricks:
+  screen:
+    path: bricks/screen
+  repository:
+    path: bricks/repository
+  data_source:
+    path: bricks/data_source
+  endpoint:
+    path: bricks/endpoint
+  use_case:
+    path: bricks/use_case

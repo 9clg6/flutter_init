@@ -1,0 +1,34 @@
+name: repository
+description: Generate a domain repository contract with its data implementation and provider.
+version: 0.1.0
+environment:
+  mason: ">=0.1.0 <1.0.0"
+vars:
+  name:
+    type: string
+    description: Repository name (e.g. authentication, user).
+    default: sample
+  has_remote:
+    type: boolean
+    description: Inject a remote data source dependency.
+    default: true
+  remote_class:
+    type: string
+    description: Remote data source class name.
+    default: ""
+  remote_provider:
+    type: string
+    description: Remote data source provider getter.
+    default: ""
+  has_local:
+    type: boolean
+    description: Inject a local data source dependency.
+    default: false
+  local_class:
+    type: string
+    description: Local data source class name.
+    default: ""
+  local_provider:
+    type: string
+    description: Local data source provider getter.
+    default: ""

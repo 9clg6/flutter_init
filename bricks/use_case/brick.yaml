@@ -1,0 +1,46 @@
+name: use_case
+description: Generate a domain use case with its provider.
+version: 0.1.0
+environment:
+  mason: ">=0.1.0 <1.0.0"
+vars:
+  name:
+    type: string
+    description: Use case name without the `.use_case` suffix (e.g. login).
+    default: sample
+  result_type:
+    type: string
+    description: Result type returned by the use case.
+    default: void
+  params_type:
+    type: string
+    description: Optional params type accepted by the use case.
+    default: ""
+  repository_class:
+    type: string
+    description: Repository dependency class.
+    default: ExampleRepository
+  repository_import:
+    type: string
+    description: Import path for the repository class.
+    default: package:starter_kit/domain/repositories/example.repository.dart
+  repository_provider:
+    type: string
+    description: Riverpod provider resolving the repository.
+    default: exampleRepositoryProvider
+  repository_provider_import:
+    type: string
+    description: Import path for the repository provider.
+    default: package:starter_kit/core/providers/data/repositories/example.repository.provider.dart
+  method_name:
+    type: string
+    description: Repository method invoked by the use case.
+    default: example
+  result_import:
+    type: string
+    description: Optional import for the result type.
+    default: ""
+  params_import:
+    type: string
+    description: Optional import for the params type.
+    default: ""

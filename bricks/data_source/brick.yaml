@@ -1,0 +1,30 @@
+name: data_source
+description: Generate a data source contract with its implementation and provider.
+version: 0.1.0
+environment:
+  mason: ">=0.1.0 <1.0.0"
+vars:
+  name:
+    type: string
+    description: Data source name (e.g. authentication, user).
+    default: sample
+  is_remote:
+    type: boolean
+    description: Whether the data source is remote (set to false for local).
+    default: true
+  dependency_class:
+    type: string
+    description: Dependency class to inject (endpoint, storage, etc.).
+    default: ""
+  dependency_provider:
+    type: string
+    description: Riverpod provider used to resolve the dependency.
+    default: ""
+  dependency_provider_import:
+    type: string
+    description: Import path for the dependency provider.
+    default: ""
+  dependency_import:
+    type: string
+    description: Import path for the dependency.
+    default: ""
