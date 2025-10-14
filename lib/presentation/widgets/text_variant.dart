@@ -153,7 +153,7 @@ class TextVariant extends StatelessWidget {
 
   TextStyle _getTextStyle(BuildContext context) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-    final AppBarTheme appBarTheme = Theme.of(context).appBarTheme;
+    final AppBarThemeData appBarTheme = Theme.of(context).appBarTheme;
     TextStyle textStyle = textTheme.bodyMedium!;
     switch (variantType) {
       case TextVariantType.displayLarge:
@@ -189,7 +189,8 @@ class TextVariant extends StatelessWidget {
       case TextVariantType.button:
         textStyle = textTheme.titleMedium!;
       case TextVariantType.appBarTitle:
-        textStyle = appBarTheme.titleTextStyle ??
+        textStyle =
+            appBarTheme.titleTextStyle ??
             appBarTheme.toolbarTextStyle ??
             textTheme.displaySmall!;
       case TextVariantType.custom:

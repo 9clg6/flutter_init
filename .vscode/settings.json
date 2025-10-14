@@ -1,0 +1,5 @@
+{
+  "java.configuration.updateBuildConfiguration": "disabled",
+  "dart.flutterSdkPath": ".fvm/versions/3.35.2",
+  "dart.pubGetOnSave": false
+}

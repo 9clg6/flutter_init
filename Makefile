@@ -13,21 +13,18 @@ endif
 		retrofit \
 		json_annotation \
 		copy_with_extension \
-		get_it \
-		injectable \
+
 		flutter_riverpod \
 		auto_route \
 		build_runner \
-		firebase_crashlytics \
-		firebase_analytics \
-		firebase_core \
+
 		sembast \
 		path_provider \
 		path \
 		logger \
 		flutter_svg \
 		dev:flutter_lints \
-		dev:injectable_generator \
+
 		dev:build_runner \
 		dev:retrofit_generator \
 		dev:json_serializable \
@@ -62,20 +59,3 @@ clean:
 	@make generate
 	@make localization
 
-firebase:
-ifeq (, $(shell which flutterfire))
-	$(error "Please install flutterfire cli")
-endif
-ifndef APP
-	$(error "Missing 'APP=xxx', where 'xxx' is app name (like myapp_flutter)")
-endif
-ifndef ENV
-	$(error "Missing 'ENV=xxx', where 'xxx' is target env (like dev)")
-endif
-	fvm dart run flutterfire config \
-		--project=${APP}-$(ENV) \
-		--out=lib/firebase_options_$(ENV).dart \
-		--ios-bundle-id=com.example.${APP}.$(ENV) \
-		--ios-out=ios/flavors/$(ENV)/GoogleService-Info.plist \
-		--android-package-name=com.example.${APP}.$(ENV) \
-		--android-out=android/app/src/$(ENV)/google-services.json
