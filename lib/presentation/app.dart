@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:starter_kit/core/providers/foundation/kernel.provider.dart';
+import 'package:starter_kit/core/providers/kernel.provider.dart';
 import 'package:starter_kit/core/providers/presentation/router.provider.dart';
 import 'package:starter_kit/foundation/routing/app_router.dart';
 import 'package:starter_kit/foundation/theming/theme.dart';

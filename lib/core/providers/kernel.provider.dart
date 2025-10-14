@@ -1,15 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:starter_kit/core/providers/config/appconfig.provider.dart';
-import 'package:starter_kit/core/providers/core/services/user.service.provider.dart';
 import 'package:starter_kit/core/providers/core/usecases/get_auth.use_case.provider.dart';
 import 'package:starter_kit/core/providers/data/clients/dio_client.provider.dart';
 import 'package:starter_kit/core/providers/data/datasources/local/authentication.local.data_source.provider.dart';
 import 'package:starter_kit/core/providers/data/repositories/authentication.repository.provider.dart';
 import 'package:starter_kit/core/providers/data/storages/authentication.secure_storage.provider.dart';
-import 'package:starter_kit/core/providers/foundation/services/user.service.dart';
+import 'package:starter_kit/core/providers/services/user.service.provider.dart';
 import 'package:starter_kit/data/clients/dio.client.dart';
 import 'package:starter_kit/data/clients/interceptors/token.interceptor.dart';
+import 'package:starter_kit/domain/services/user.service.dart';
 import 'package:starter_kit/foundation/config/app_config.dart';
 
 part 'kernel.provider.g.dart';

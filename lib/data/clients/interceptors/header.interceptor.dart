@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:starter_kit/core/providers/foundation/services/navigation.service.dart';
 import 'package:starter_kit/data/clients/dio.client.dart';
 import 'package:starter_kit/domain/entities/auth.entity.dart';
+import 'package:starter_kit/domain/services/navigation.service.dart';
 import 'package:starter_kit/domain/usecases/get_auth.use_case.dart';
 import 'package:starter_kit/foundation/interfaces/results.usecases.dart';
 
